@@ -1,0 +1,111 @@
+.logo-img {
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    padding: 20px;
+}
+
+.center-span { /* to center everything */ 
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 75%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px 25px;
+    margin-bottom: 20px;
+    margin-top: 0px; /* 0 px margin top */
+    font-weight: bold;
+}
+
+fieldset label{
+    font-size: 90%;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 2px; /* so the border has some rounded curves at the corners */
+    margin-bottom: 25px;
+}
+
+form input[type="submit"] { /* looks for input within form and type = "submit" specifically */
+    background-color: gold;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.Password {
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.Help {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.center-color {
+    background-color: gray;
+}
+
+form input[type="create"] { /* looks for input within form and type = "submit" specifically */
+    background-color: gray;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 0px;
+}
+
+.footer a{
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 75%;
+    font-size: 15px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+    font-size: 15px;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.line:not(:empty)::before {
+    margin-right: 5px;
+}
+
+.line:not(:empty)::after {
+    margin-left: 5px;
+}
